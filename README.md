@@ -73,6 +73,39 @@ This repository is set for revision of ReacTypeScript for including GraphQL know
   }
   ```
 - Command to install `babel-loder` `npm i -D babel-loader`
+- In `webpack.config.js` to replace the `ts-loader` with `babel-loader`
+  ```json
+   entry: "./src/index.ts",
+    resolve: {
+        extensions: ['.js', '.ts', '.tsx']
+    },
+    module:{
+        rules: [{
+            test: /\.tsx?$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+        }]
+    },
+  ```
+  - Command to install class properties convertor proposal using following command.
+    `npm i -D @babel/plugin-proposal-class-properties`
+  - Need to add `plugin` configuration in the `.babelrc.json` file.
+    ```
+  { 
+    "presets": ["@babel/preset-env", "@babel/preset-typescript"],
+    "plugins": ["@babel/plugin/-proposal-class-properties"]
+  }
+  ```
+
+
+
+
+
+
+
+
+
+
 
 
 

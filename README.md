@@ -65,9 +65,10 @@ module.exports = {
 - Command to install babel `npm i -D @babel/core @babel/preset-env @babel/preset-typescript`
 - Create `.babelrc.json` file
   ```
-  {
+  { 
     "presets": ["@babel/preset-env", "@babel/preset-typescript"]
- }```
+  }
+  ```
 - Command to install `babel-loder` `npm i -D babel-loader`
 
 

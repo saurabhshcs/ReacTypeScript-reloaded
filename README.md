@@ -90,11 +90,11 @@ This repository is set for revision of ReacTypeScript for including GraphQL know
   - Command to install class properties convertor proposal using following command.
     `npm i -D @babel/plugin-proposal-class-properties`
   - Need to add `plugin` configuration in the `.babelrc.json` file.
-    ```
-  { 
+    ```node
+    { 
     "presets": ["@babel/preset-env", "@babel/preset-typescript"],
     "plugins": ["@babel/plugin/-proposal-class-properties"]
-  }
+    }
   ```
 
 

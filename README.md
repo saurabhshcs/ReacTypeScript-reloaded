@@ -96,5 +96,44 @@ This repository is set for revision of ReacTypeScript for including GraphQL know
     "plugins": ["@babel/plugin/-proposal-class-properties"]
     }
    ```
+### Add CSS module and plug-in
+ - Run command as `npm i -D css-loader`.
+ - Add following configurations into the `webpack.config.js`
+ ```yaml
+ module:{
+        rules: [{
+            test: /\.tsx?$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+        },
+        {
+            test: /\.css$/,
+            loader: 'css-loader'
+        },
+     ],
+    },
+ ```
+ - Run command as `npm i -D mini-css-extract-plugin` for installing plugin to load css.
+ - Add following configurations into the `webpack.config.js`
+ ```node
+ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+.
+.
+.
+.
+module:{
+        rules: [{
+            test: /\.tsx?$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+        },
+        {
+            test: /\.css$/,
+            use: [MiniCssExtractPlugin.loader, {loader: 'css-loader', options: {modules: true}}],
+        },
+     ],
+    },
+ ```
+
 Follow me on - [Medium](https://saurabhshcs.medium.com) | [Linkedin](https://www.linkedin.com/in/saurabhshcs/) | [YouTube](https://www.youtube.com/channel/UCSQqjPw7_tfx1Ie4yYHbcxQ?pbjreload=102) | [StackOverFlow](https://stackoverflow.com/users/10719720/saurabhshcs?tab=profile)
 

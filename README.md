@@ -2,7 +2,7 @@
 This repository is set for revision of ReacTypeScript for including GraphQL knowledge.
 
 ### What is React?
-> Nothing is React
+> React is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
 
 ### Comand to create `React` and `TypeScript` app
 `npx create-react-app my-app --template typescript`

@@ -1,6 +1,13 @@
 # ReacTypeScript-reloaded
 This repository is set for revision of ReacTypeScript for including GraphQL knowledge.
 
+### What is React?
+> Nothing is React
+
+### Comand to create `React` and `TypeScript` app
+`npx create-react-app my-app --template typescript`
+
+
 ### What is webpack?
 > Webpack is module bundle for javascript.
 ### Webpack configuration
